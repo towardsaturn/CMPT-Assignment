@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Night Crystals</title>
+<link rel = "alternate stylesheet" href = "stylesheet1.css" type = "text/css" title = "Starry Night" />
+<link rel = "stylesheet" href = "stylesheet2.css" type = "text/css" title = "Cotton Candy" />
+</head>
+
+<body>
+
+<p><img src="images/banner.jpg" alt="Night Crystals" /></p>
+
+<div id="sidebar">
+<ul id="navigation" style="list-style: none;">
+<li><a href="home.html">Home Page</a></li>
+<li><a href="about.html">Our Company</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="order.html">Order</a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
+</ul>
+</div>
+
+
+<div id="content">
+<h1>Order Form</h1>
+<p>**IMPORTANT: Please fill out all parts of the form. If you do not wish to order a product, please select <b>"None", and enter a quantity of zero, otherwise your order will not send through.</b></p>
+<p>Shipping is $5 Flate Rate for those in B.C, and $10 Flate Rate for the Rest of Canada. We currently ONLY ship to Canada.</p>
+<p>Tax is 12% for customers residing in B.C., and 6% for the rest of Canada.</p>
+<p><b>Current Promotion:</b> Recieve 15% OFF when you spend over $150, not including giftwrap costs.</p>
+<br />
+<form action="receipt.py">
+<fieldset>
+<legend>Personal Information</legend>
+<p><input type="text" name="name" value="name" /></p>
+<p><input type="text" name="email" value="email" /></p>
+<p><input type="text" name="address" value="address" /></p>
+<p><input type="text" name="city" value="city" /></p>
+<p><input type="text" maxlength="2" name="province" value="province"/></p>
+<p><input type="text" maxlength="6" name="postalcode" value="postalcode"/></p>
+</fieldset>
+
+<fieldset>
+<legend>Credit Card Information</legend>
+<p><select name="creditcardtype">
+<option>Visa</option>
+<option>MasterCard</option>
+<option>AMEX</option>
+</select>
+</p>
+
+
+<p><b>Card Number(16 Digits):</b></p>
+<p><input type="text" size="4" maxlength="4" name="cardnumber1" value=""/><input type="text" size="4" maxlength="4" name="cardnumber2" value=""/><input type="text" size="4" maxlength="4" name="cardnumber3" value=""/><input type="text" size="4" maxlength="4" name="cardnumber4" value=""/></p>
+<p><input type="text" name="expiration" value="Expiry Date(00/00/00)"/></p>
+</fieldset>
+
+<fieldset>
+<legend>Items</legend>
+<p><select name="item1" multiple="multiple">
+<option>Raspberry Fusion</option>
+<option>Melon Icecream</option>
+<option>Mixed</option>
+<option>Sweet Lemon</option>
+<option>Tropical Berry</option>
+<option>None</option>
+</select>
+</p>
+<p><input type="text" maxlength="3" name="quantity1" value="Enter Amount (0-999)"/></p>
+
+<p><select name="item2" multiple="multiple">
+<option>Raspberry Fusion</option>
+<option>Melon Icecream</option>
+<option>Mixed</option>
+<option>Sweet Lemon</option>
+<option>Tropical Berry</option>
+<option>None</option>
+</select>
+</p>
+<p><input type="text" maxlength="3" name="quantity2" value="Enter Amount (0-999)"/></p>
+
+<p><select name="item3" multiple="multiple">
+<option>Raspberry Fusion</option>
+<option>Melon Icecream</option>
+<option>Mixed</option>
+<option>Sweet Lemon</option>
+<option>Tropical Berry</option>
+<option>None</option>
+</select>
+</p>
+<p><input type="text" maxlength="3" name="quantity3" value="Enter Amount (0-999)" /></p>
+
+<p><select name="item4" multiple="multiple">
+<option>Raspberry Fusion</option>
+<option>Melon Icecream</option>
+<option>Mixed</option>
+<option>Sweet Lemon</option>
+<option>Tropical Berry</option>
+<option>None</option>
+</select>
+</p>
+<p><input type="text" maxlength="3" name="quantity4" value="Enter Amount (0-999)"/></p>
+
+<p><select name="item5" multiple="multiple">
+<option>Raspberry Fusion</option>
+<option>Melon Icecream</option>
+<option>Mixed</option>
+<option>Sweet Lemon</option>
+<option>Tropical Berry</option>
+<option>None</option>
+</select>
+</p>
+<p><input type="text" maxlength="3" name="quantity5" value="Enter Amount (0-999)"/></p>
+</fieldset>
+<fieldset>
+<p><b>Would you like your Items to be Giftwrapped at a fee of $1 per item?</b></p>
+<p><select name="giftwrap">
+<option>Yes</option>
+<option>No</option>
+</select>
+</p>
+<p><b>Would you like to recieve Updates?</b></p>
+<p><select name="updates">
+<option>Yes</option>
+<option>No</option>
+</select>
+</p>
+<p><input type="submit" value="Go!" name="submit" /></p>
+</fieldset>
+
+</form>
+
+</div>
+</body>
+</html>
+
